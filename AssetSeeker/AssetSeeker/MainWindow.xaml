@@ -15,9 +15,9 @@
     </Window.SystemBackdrop>
 
     <Grid>
-        <!--<Grid.Background>
+        <Grid.Background>
             <ImageBrush x:Name="MainWindowImageBrush" Stretch="UniformToFill" ImageSource="Assets/BackGround.png"></ImageBrush>
-        </Grid.Background>-->
+        </Grid.Background>
 
         <NavigationView PaneDisplayMode="LeftCompact" OpenPaneLength="200"  x:Name="nvSample" ItemInvoked="nvSample_ItemInvoked" IsBackEnabled="False" IsBackButtonVisible="Collapsed">
 

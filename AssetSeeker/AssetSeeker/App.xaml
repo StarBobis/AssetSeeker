@@ -12,6 +12,9 @@
                 <!-- Other merged dictionaries here -->
             </ResourceDictionary.MergedDictionaries>
             <!-- Other app resources here -->
+
+            <!-- 解决NavigationView的Content背景颜色昏暗的问题 -->
+            <SolidColorBrush x:Key="NavigationViewContentBackground" Color="Transparent" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

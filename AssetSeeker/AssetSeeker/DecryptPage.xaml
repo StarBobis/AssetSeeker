@@ -7,9 +7,16 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="Transparent">
 
-    <Grid>
-        
-    </Grid>
+    <!-- 支持滑条，不然显示不完全 -->
+    <ScrollViewer VerticalScrollBarVisibility="Auto" >
+        <ScrollViewer.Background>
+            <AcrylicBrush 
+            TintColor="Black" 
+            TintOpacity="0.6" 
+            FallbackColor="LightBlue" 
+            />
+        </ScrollViewer.Background>
+    </ScrollViewer>
 </Page>
