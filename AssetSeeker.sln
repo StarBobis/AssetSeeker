@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "AssetSeeker (Package)", "AssetSeeker\AssetSeeker (Package)\AssetSeeker (Package).wapproj", "{7D268C12-3B0A-4100-96F3-C720C97E908F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetSeeker", "AssetSeeker\AssetSeeker\AssetSeeker.csproj", "{09D1C364-8D5A-4AE8-A082-26870F3625D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{9FA3D6BD-1EC1-3BA5-80CB-CE02773A58D5}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,24 +21,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Debug|ARM64.ActiveCfg = Debug|ARM64
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Debug|ARM64.Build.0 = Debug|ARM64
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Debug|ARM64.Deploy.0 = Debug|ARM64
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Debug|x64.ActiveCfg = Debug|x64
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Debug|x64.Build.0 = Debug|x64
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Debug|x64.Deploy.0 = Debug|x64
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Debug|x86.ActiveCfg = Debug|x86
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Debug|x86.Build.0 = Debug|x86
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Debug|x86.Deploy.0 = Debug|x86
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Release|ARM64.ActiveCfg = Release|ARM64
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Release|ARM64.Build.0 = Release|ARM64
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Release|ARM64.Deploy.0 = Release|ARM64
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Release|x64.ActiveCfg = Release|x64
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Release|x64.Build.0 = Release|x64
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Release|x64.Deploy.0 = Release|x64
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Release|x86.ActiveCfg = Release|x86
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Release|x86.Build.0 = Release|x86
-		{7D268C12-3B0A-4100-96F3-C720C97E908F}.Release|x86.Deploy.0 = Release|x86
 		{09D1C364-8D5A-4AE8-A082-26870F3625D1}.Debug|ARM64.ActiveCfg = Debug|ARM64
 		{09D1C364-8D5A-4AE8-A082-26870F3625D1}.Debug|ARM64.Build.0 = Debug|ARM64
 		{09D1C364-8D5A-4AE8-A082-26870F3625D1}.Debug|x64.ActiveCfg = Debug|x64

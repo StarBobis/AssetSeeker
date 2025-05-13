@@ -28,9 +28,38 @@ namespace AssetSeeker
             this.InitializeComponent();
         }
 
-        private void myButton_Click(object sender, RoutedEventArgs e)
+        private void nvSample_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
         {
-            myButton.Content = "Clicked";
+
+            // 如果点击的是设置按钮，则导航到设置页面
+            if (args.IsSettingsInvoked)
+            {
+                contentFrame.Navigate(typeof(SettingsPage));
+            }
+            else if (args.InvokedItemContainer is NavigationViewItem item)
+            {
+                var pageTag = item.Tag.ToString();
+                Type pageType = null;
+
+                switch (pageTag)
+                {
+                    case "HomePage":
+                        pageType = typeof(HomePage);
+                        break;
+                    case "WorkPage":
+                        pageType = typeof(WorkPage);
+                        break;
+                    case "DecryptPage":
+                        pageType = typeof(DecryptPage);
+                        break;
+                }
+
+                if (pageType != null && contentFrame.Content?.GetType() != pageType)
+                {
+                    contentFrame.Navigate(pageType);
+                }
+            }
         }
+
     }
 }

@@ -8,8 +8,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Title="AssetSeeker">
+    
+    <!--云母效果窗口-->
+    <Window.SystemBackdrop>
+        <MicaBackdrop Kind="BaseAlt"/>
+    </Window.SystemBackdrop>
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
-    </StackPanel>
+    <Grid>
+        <!--<Grid.Background>
+            <ImageBrush x:Name="MainWindowImageBrush" Stretch="UniformToFill" ImageSource="Assets/BackGround.png"></ImageBrush>
+        </Grid.Background>-->
+
+        <NavigationView PaneDisplayMode="LeftCompact" OpenPaneLength="200"  x:Name="nvSample" ItemInvoked="nvSample_ItemInvoked" IsBackEnabled="False" IsBackButtonVisible="Collapsed">
+
+            <NavigationView.MenuItems>
+                <NavigationViewItem x:Name="NavigationViewItem_HomePage" Icon="Home" Content="Home" Tag="HomePage" />
+                <NavigationViewItem x:Name="NavigationViewItem_WorkPage" Icon="Edit" Content="Work" Tag="WorkPage" />
+                <NavigationViewItem x:Name="NavigationViewItem_DecryptPage" Icon="UnPin" Content="Decrypt" Tag="DecryptPage" />
+            </NavigationView.MenuItems>
+
+            <Frame x:Name="contentFrame"/>
+        </NavigationView>
+    </Grid>
 </Window>
